@@ -6,3 +6,52 @@ img {
 .stat {
     padding-right: 5rem;
 }
+
+button {
+    margin-right: 2rem;
+}
+
+.dolls {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.doll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    gap: 20px;
+}
+
+.doll img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 20;
+}
+
+.reveal {
+    transform: translateY(-100px);
+}
+
+.baby {
+    z-index: 10;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgd(245, 233, 220);
+    border-radius: 50%;
+    box-shadow: 5px -2px 5px rgba(113, 112, 112, 0.6);
+    margin: 10px;
+    top: 65px;
+}
+
+.stat {
+    padding-right: 5rem;
+}
+
+button {
+    margin-right: 2rem;
+}
