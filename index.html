@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Matryoshka Game</title>
+        <link rel="icon" type="image/x-icon" href="assets/ashtonfavicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/ashtonfavicon.png" alt="logo" />
+            <h1>Where is the baby?</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="dolls">
+                <div class="doll">
+                    <img
+                        id="red-doll"
+                        src="/assets/redmatryoshka-removebg-preview.png"
+                        height="400px"
+                    />
+                    <img class="babies" src="/assets/baby.png" alt="baby" />
+                    <button id="button-1">Red Doll</button>
+                </div>
+                <div class="doll">
+                    <img
+                        id="blue-doll"
+                        src="/assets/bluematryoshka-removebg-preview.png"
+                        height="400px"
+                    />
+                    <img class="babies" src="/assets/baby.png" alt="baby" />
+                    <button id="button-2">Blue Doll</button>
+                </div>
+                <div class="doll">
+                    <img
+                        id="green-doll"
+                        src="/assets/greenmatryoshka-removebg-preview.png"
+                        height="400px"
+                    />
+                    <img class="babies" src="/assets/baby.png" alt="baby" />
+                    <button id="button-3">Green Doll</button>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stat">Wins <span id="wins">0</span></div>
+                <div class="stat">Losses <span id="losses">0</span></div>
+                <div class="stat">Total <span id="total">0</span></div>
+            </section>
+            <section class="reset">
+                <button id="resetBtn">Try Again!</button>
+            </section>
+            <section class="selector">
+                <select onchange="color" class="color" id="color-selector">
+                    <option value="red">red</option> 
+                    <option value="green">green</option> 
+                    <option value="blue">blue</option>
+                </section>
+        </main>
+    </body>
 </html>

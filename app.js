@@ -1,11 +1,99 @@
-/* Imports */
-
 /* Get DOM Elements */
+const button1 = document.getElementById('button-1');
+const button2 = document.getElementById('button-2');
+const button3 = document.getElementById('button-3');
+const resetBtn = document.getElementById('resetBtn');
+const redDoll = document.getElementById('red-doll');
+const blueDoll = document.getElementById('blue-doll');
+const greenDoll = document.getElementById('green-doll');
+
+const winsEl = document.getElementById('wins');
+const lossesEl = document.getElementById('losses');
+const totalEl = document.getElementById('total');
+
+// const colorParam = document.getElementById('color-selector');
 
 /* State */
+let wins = 0;
+let total = 0;
 
 /* Events */
+button1.addEventListener('click', () => {
+    total++;
+    resetBabies();
+    const babyLocation = Math.ceil(Math.random() * 3);
+    if (babyLocation === 1) {
+        wins++;
+        redDoll.classList.add('reveal');
+    } else if (babyLocation === 2) {
+        blueDoll.classList.add('reveal');
+    } else {
+        greenDoll.classList.add('reveal');
+    }
+    displayResults();
+});
+
+button2.addEventListener('click', () => {
+    total++;
+    resetBabies();
+    const babyLocation = Math.ceil(Math.random() * 3);
+    if (babyLocation === 1) {
+        redDoll.classList.add('reveal');
+    } else if (babyLocation === 2) {
+        wins++;
+        blueDoll.classList.add('reveal');
+    } else {
+        greenDoll.classList.add('reveal');
+    }
+    displayResults();
+});
+
+button3.addEventListener('click', () => {
+    total++;
+    resetBabies();
+    const babyLocation = Math.ceil(Math.random() * 3);
+    if (babyLocation === 1) {
+        redDoll.classList.add('reveal');
+    } else if (babyLocation === 2) {
+        blueDoll.classList.add('reveal');
+    } else {
+        greenDoll.classList.add('reveal');
+        wins++;
+    }
+    displayResults();
+});
+
+function resetBabies() {
+    redDoll.classList.remove('reveal');
+    blueDoll.classList.remove('reveal');
+    greenDoll.classList.remove('reveal');
+}
 
 /* Display Functions */
+function displayResults() {
+    winsEl.textContent = wins;
+    lossesEl.textContent = total - wins;
+    totalEl.textContent = total;
+}
 
-// (don't forget to call any display functions you want to run on page load!)
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    total = 0;
+    resetBabies();
+    displayResults();
+});
+
+// function changeColor(colorParam) {
+// let color = colorParam.value();
+// var optionElement = document.getElementById(color);
+// optionElement.style.color = color;
+
+// if (event.target.value === red) {
+// red.style.color = 'red';
+// } else if (event.target.value === green) {
+// green.style.color = 'green';
+// } else if (event.target.value === blue) {
+// blue.style.color = 'blue';
+// } else {
+// alert('There was an error!');
+// }
