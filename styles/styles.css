@@ -37,15 +37,6 @@ button {
 }
 
 .baby {
-    z-index: 10;
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: rgd(245, 233, 220);
-    border-radius: 50%;
-    box-shadow: 5px -2px 5px rgba(113, 112, 112, 0.6);
-    margin: 10px;
-    top: 65px;
 }
 
 .stat {

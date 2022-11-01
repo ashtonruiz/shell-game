@@ -1,8 +1,8 @@
 /* Get DOM Elements */
 const button1 = document.getElementById('button-1');
-const redDoll = document.getElementById('#red-doll');
-const blueDoll = document.getElementById('#blue-doll');
-const greenDoll = document.getElementById('#green-greenDoll');
+const redDoll = document.getElementById('red-doll');
+const blueDoll = document.getElementById('blue-doll');
+const greenDoll = document.getElementById('green-doll');
 
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -18,12 +18,11 @@ button1.addEventListener('click', () => {
     resetBabies();
 
     const babyLocation = Math.ceil(Math.random() * 3);
-
-    if (babyLocation) === 1) {
+    if (babyLocation === 1) {
         wins++;
         redDoll.classList.add('reveal');
     } else if (babyLocation === 2) {
-        blueDoll.classList.add(reveal);
+        blueDoll.classList.add('reveal');
     } else {
         greenDoll.classList.add('reveal');
     }
@@ -33,7 +32,7 @@ button1.addEventListener('click', () => {
 function resetBabies() {
     redDoll.classList.remove('reveal');
     blueDoll.classList.remove('reveal');
-    greenDoll.classList.remove('remove');
+    greenDoll.classList.remove('reveal');
 }
 
 /* Display Functions */
