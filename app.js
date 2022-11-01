@@ -15,10 +15,11 @@ let wins = 0;
 let total = 0;
 
 /* Events */
+// for some reason only button 1 works. Tried copying code below for buttons 2 & 3.
+// also tried adding event listeners alone for other buttons. Also didn't work.
 button1.addEventListener('click', () => {
     total++;
     resetBabies();
-
     const babyLocation = Math.ceil(Math.random() * 3);
     if (babyLocation === 1) {
         wins++;
@@ -43,5 +44,3 @@ function displayResults() {
     lossesEl.textContent = total - wins;
     totalEl.textContent = total;
 }
-
-// (don't forget to call any display functions you want to run on page load!)
