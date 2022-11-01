@@ -53,8 +53,9 @@ button {
     font-family: 'Righteous', cursive;
 }
 
-#resetBtn {
+.reset {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding-top: 15px;
 }
