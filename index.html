@@ -14,6 +14,13 @@
         <script type="module" src="app.js"></script>
 
         <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
@@ -26,7 +33,7 @@
     <body>
         <header>
             <img class="logo" src="assets/ashtonfavicon.png" alt="logo" />
-            <h1>This женщина lost her baby. Who was it?</h1>
+            <h1>Where is the baby?</h1>
         </header>
 
         <main>
@@ -38,7 +45,7 @@
                         height="400px"
                     />
                     <img class="babies" src="/assets/baby.png" alt="baby" />
-                    <button id="button-1">Suspect #1</button>
+                    <button id="button-1">Red Doll</button>
                 </div>
                 <div class="doll">
                     <img
@@ -47,7 +54,7 @@
                         height="400px"
                     />
                     <img class="babies" src="/assets/baby.png" alt="baby" />
-                    <button id="button-2">Suspect #2</button>
+                    <button id="button-2">Blue Doll</button>
                 </div>
                 <div class="doll">
                     <img
@@ -56,13 +63,14 @@
                         height="400px"
                     />
                     <img class="babies" src="/assets/baby.png" alt="baby" />
-                    <button id="button-3">Suspect #3</button>
+                    <button id="button-3">Green Doll</button>
                 </div>
             </section>
             <section class="stats">
-                <div class="stat">Wins: <span id="wins">0</span></div>
-                <div class="stat">Losses: <span id="losses">0</span></div>
-                <div class="stat">Total: <span id="total">0</span></div>
+                <div class="stat">Wins <span id="wins">0</span></div>
+                <div class="stat">Losses <span id="losses">0</span></div>
+                <div class="stat">Total <span id="total">0</span></div>
+                <button id="resetBtn">Try Again!</button>
             </section>
         </main>
     </body>

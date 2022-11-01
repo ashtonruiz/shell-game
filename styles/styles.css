@@ -12,7 +12,7 @@ button {
 }
 
 .dolls {
-    margin-top: 40px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
 }
@@ -41,14 +41,34 @@ button {
     z-index: -1;
     position: absolute;
     margin: 10px;
-    top: 65px;
-    height: 10rem;
+    top: 274px;
+    height: 100px;
 }
 
 .stat {
     padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 10px;
 }
 
 button {
     margin-right: 2rem;
+    width: 100px;
+    height: 30px;
+}
+
+h1 {
+    align-items: center;
+}
+
+.resetBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
