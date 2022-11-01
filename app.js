@@ -33,6 +33,36 @@ button1.addEventListener('click', () => {
     displayResults();
 });
 
+button2.addEventListener('click', () => {
+    total++;
+    resetBabies();
+    const babyLocation = Math.ceil(Math.random() * 3);
+    if (babyLocation === 1) {
+        redDoll.classList.add('reveal');
+    } else if (babyLocation === 2) {
+        wins++;
+        blueDoll.classList.add('reveal');
+    } else {
+        greenDoll.classList.add('reveal');
+    }
+    displayResults();
+});
+
+button3.addEventListener('click', () => {
+    total++;
+    resetBabies();
+    const babyLocation = Math.ceil(Math.random() * 3);
+    if (babyLocation === 1) {
+        redDoll.classList.add('reveal');
+    } else if (babyLocation === 2) {
+        blueDoll.classList.add('reveal');
+    } else {
+        greenDoll.classList.add('reveal');
+        wins++;
+    }
+    displayResults();
+});
+
 function resetBabies() {
     redDoll.classList.remove('reveal');
     blueDoll.classList.remove('reveal');
