@@ -26,7 +26,6 @@ img {
 }
 
 .babies {
-    /* need to figure out how to add img instead for "pearl" AKA baby - babies are currently hidden 100% of the time due to Y axis*/
     z-index: -1;
     position: absolute;
     margin: 10px;
