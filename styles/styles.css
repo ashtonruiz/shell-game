@@ -3,14 +3,6 @@ img {
     padding-right: 1rem;
 }
 
-.stat {
-    padding-right: 5rem;
-}
-
-button {
-    margin-right: 2rem;
-}
-
 .dolls {
     margin-top: 100px;
     display: flex;
@@ -24,9 +16,6 @@ button {
     justify-content: flex-end;
     position: relative;
     gap: 20px;
-}
-
-.doll {
     width: 100%;
     transition: transform 0.5s ease-in-out;
     z-index: 20;
@@ -61,13 +50,10 @@ button {
     margin-right: 2rem;
     width: 100px;
     height: 30px;
+    font-family: 'Righteous', cursive;
 }
 
-h1 {
-    align-items: center;
-}
-
-.resetBtn {
+#resetBtn {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,6 +2,7 @@
 const button1 = document.getElementById('button-1');
 const button2 = document.getElementById('button-2');
 const button3 = document.getElementById('button-3');
+const resetBtn = document.getElementById('resetBtn');
 const redDoll = document.getElementById('red-doll');
 const blueDoll = document.getElementById('blue-doll');
 const greenDoll = document.getElementById('green-doll');
@@ -44,3 +45,10 @@ function displayResults() {
     lossesEl.textContent = total - wins;
     totalEl.textContent = total;
 }
+
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    total = 0;
+    resetBabies();
+    displayResults();
+});
