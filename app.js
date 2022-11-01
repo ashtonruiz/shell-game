@@ -1,5 +1,7 @@
 /* Get DOM Elements */
 const button1 = document.getElementById('button-1');
+const button2 = document.getElementById('button-2');
+const button3 = document.getElementById('button-3');
 const redDoll = document.getElementById('red-doll');
 const blueDoll = document.getElementById('blue-doll');
 const greenDoll = document.getElementById('green-doll');
