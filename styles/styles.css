@@ -26,7 +26,7 @@ button {
     gap: 20px;
 }
 
-.doll img {
+.doll {
     width: 100%;
     transition: transform 0.5s ease-in-out;
     z-index: 20;
@@ -36,8 +36,13 @@ button {
     transform: translateY(-100px);
 }
 
-.baby {
+.babies {
     /* need to figure out how to add img instead for "pearl" AKA baby */
+    z-index: -1;
+    position: absolute;
+    margin: 10px;
+    top: 65px;
+    height: 10rem;
 }
 
 .stat {
